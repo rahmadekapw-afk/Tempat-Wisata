@@ -8,8 +8,8 @@ const Footer = () => {
             <div className="container mx-auto px-6 border-b border-gray-800 pb-20">
                 <div className="bg-blue-600 rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 shadow-2xl shadow-blue-600/20 relative overflow-hidden">
                     <div className="relative z-10 text-center lg:text-left">
-                        <h3 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">Siap Untuk Perjalanan Anda?</h3>
-                        <p className="text-blue-100 text-lg">Daftar untuk mendapatkan update destinasi terbaru.</p>
+                        <h3 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">Siap Jelajahi Jember?</h3>
+                        <p className="text-blue-100 text-lg">Daftar untuk mendapatkan update destinasi terbaru di Jember.</p>
                     </div>
                     <div className="relative z-10 w-full lg:w-auto">
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -31,9 +31,13 @@ const Footer = () => {
             <div className="container mx-auto px-6 py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
                     <div className="col-span-1 lg:col-span-1">
-                        <div className="text-2xl font-black flex items-center gap-2 mb-8">
-                            <Plane className="w-8 h-8 text-blue-500" />
-                            <span className="tracking-tighter uppercase">Wisata.</span>
+                        <div className="flex items-center gap-3 mb-8 text-white">
+                            <img
+                                src="/logo.jpg"
+                                alt="Wisata Jember Logo"
+                                className="w-12 h-12 rounded-full object-cover border-2 border-white/10"
+                            />
+                            <span className="text-2xl font-black tracking-tighter uppercase">WISATA JEMBER</span>
                         </div>
                         <p className="text-gray-400 leading-relaxed mb-8 font-light">
                             Menyediakan pengalaman perjalanan terbaik di Indonesia dengan standar premium dan pelayanan kelas dunia.

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Plane } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -23,11 +23,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/70 backdrop-blur-md py-4 shadow-sm'
-          : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
+        ? 'bg-white/70 backdrop-blur-md py-4 shadow-sm'
+        : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
@@ -35,12 +34,17 @@ const Navbar = () => {
           href="/"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className={`text-2xl font-bold flex items-center gap-2 ${
-            isScrolled ? 'text-gray-900' : 'text-white'
-          }`}
+          className="flex items-center gap-3"
         >
-          <Plane className="w-8 h-8 text-blue-500" strokeWidth={2.5} />
-          <span className="tracking-tighter">WISATA.</span>
+          <img
+            src="/logo.jpg"
+            alt="Wisata Jember Logo"
+            className="w-12 h-12 rounded-full object-cover border-2 border-white/20"
+          />
+          <span className={`text-2xl font-black tracking-tighter ${isScrolled ? 'text-gray-900' : 'text-white'
+            }`}>
+            WISATA JEMBER
+          </span>
         </motion.a>
 
         {/* Desktop Links */}
@@ -52,9 +56,8 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className={`text-sm font-medium transition-colors hover:text-blue-500 ${
-                isScrolled ? 'text-gray-600' : 'text-white/90'
-              }`}
+              className={`text-sm font-medium transition-colors hover:text-blue-500 ${isScrolled ? 'text-gray-600' : 'text-white/90'
+                }`}
             >
               {link.name}
             </motion.a>
@@ -62,11 +65,10 @@ const Navbar = () => {
           <motion.button
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-lg ${
-              isScrolled
-                ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-blue-500/20'
-                : 'bg-white text-blue-600 hover:bg-blue-50 shadow-white/10'
-            }`}
+            className={`px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-lg ${isScrolled
+              ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-blue-500/20'
+              : 'bg-white text-blue-600 hover:bg-blue-50 shadow-white/10'
+              }`}
           >
             Jelajahi Sekarang
           </motion.button>
