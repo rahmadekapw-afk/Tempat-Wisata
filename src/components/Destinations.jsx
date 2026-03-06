@@ -54,7 +54,7 @@ const Destinations = () => {
                             Pilihan terbaik bagi Anda yang mencari ketenangan dan petualangan di alam terbuka. Temukan keindahan Nusantara.
                         </motion.p>
                     </div>
-                    <button className="flex items-center gap-2 text-blue-600 font-bold hover:gap-4 transition-all whitespace-nowrap">
+                    <button className="flex items-center gap-2 text-zinc-900 font-bold hover:gap-4 transition-all whitespace-nowrap">
                         Lihat Semua Destinasi <ArrowRight size={20} />
                     </button>
                 </div>
@@ -84,7 +84,7 @@ const Destinations = () => {
                                 </div>
                                 <div className="absolute bottom-6 left-6 right-6">
                                     <div className="px-4 py-2 bg-black/40 backdrop-blur-md border border-white/20 rounded-2xl text-white text-sm font-medium flex items-center gap-2 w-fit">
-                                        <MapPin size={16} className="text-blue-400" />
+                                        <MapPin size={16} className="text-zinc-300" />
                                         {destination.location}
                                     </div>
                                 </div>
@@ -93,16 +93,16 @@ const Destinations = () => {
                             {/* Content */}
                             <div className="p-8 flex flex-col flex-grow">
                                 <div className="flex justify-between items-start mb-4">
-                                    <h3 className="text-2xl font-bold text-gray-900 tracking-tight group-hover:text-blue-600 transition-colors">
+                                    <h3 className="text-2xl font-bold text-gray-900 tracking-tight group-hover:text-zinc-600 transition-colors">
                                         {destination.title}
                                     </h3>
-                                    <span className="text-blue-600 font-black text-lg">{destination.price}</span>
+                                    <span className="text-zinc-900 font-black text-lg">{destination.price}</span>
                                 </div>
                                 <p className="text-gray-500 mb-8 leading-relaxed">
                                     {destination.description}
                                 </p>
                                 <div className="mt-auto border-t border-gray-50 pt-6">
-                                    <button className="w-full py-4 bg-gray-900 group-hover:bg-blue-600 text-white rounded-2xl font-bold transition-all flex items-center justify-center gap-2">
+                                    <button className="w-full py-4 bg-zinc-900 group-hover:bg-black text-white rounded-2xl font-bold transition-all flex items-center justify-center gap-2">
                                         Booking Tiket Sekarang
                                         <ArrowRight size={18} />
                                     </button>

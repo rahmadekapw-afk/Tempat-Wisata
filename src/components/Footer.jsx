@@ -6,10 +6,10 @@ const Footer = () => {
         <footer id="footer" className="bg-gray-950 pt-24 pb-12 text-white relative overflow-hidden">
             {/* Newsletter */}
             <div className="container mx-auto px-6 border-b border-gray-800 pb-20">
-                <div className="bg-blue-600 rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 shadow-2xl shadow-blue-600/20 relative overflow-hidden">
+                <div className="bg-zinc-900 rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 shadow-2xl shadow-black/20 relative overflow-hidden">
                     <div className="relative z-10 text-center lg:text-left">
                         <h3 className="text-3xl md:text-4xl font-black mb-4 tracking-tight">Siap Jelajahi Jember?</h3>
-                        <p className="text-blue-100 text-lg">Daftar untuk mendapatkan update destinasi terbaru di Jember.</p>
+                        <p className="text-zinc-400 text-lg">Daftar untuk mendapatkan update destinasi terbaru di Jember.</p>
                     </div>
                     <div className="relative z-10 w-full lg:w-auto">
                         <div className="flex flex-col sm:flex-row gap-4">
@@ -98,8 +98,8 @@ const Footer = () => {
                         © 2026 Wisata. All rights reserved. Dibuat dengan cinta untuk Indonesia.
                     </p>
                     <div className="flex items-center gap-8 text-sm text-gray-500 font-light">
-                        <a href="#" className="hover:text-blue-500 transition-all">Support Center</a>
-                        <a href="#" className="hover:text-blue-500 transition-all">Cookies</a>
+                        <a href="#" className="transition-all">Support Center</a>
+                        <a href="#" className="transition-all">Cookies</a>
                     </div>
                 </div>
             </div>

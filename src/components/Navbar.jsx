@@ -56,7 +56,7 @@ const Navbar = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className={`text-sm font-medium transition-colors hover:text-blue-500 ${isScrolled ? 'text-gray-600' : 'text-white/90'
+              className={`text-sm font-medium transition-colors hover:text-zinc-900 ${isScrolled ? 'text-gray-600' : 'text-white/90'
                 }`}
             >
               {link.name}
@@ -66,8 +66,8 @@ const Navbar = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             className={`px-6 py-2 rounded-full text-sm font-semibold transition-all shadow-lg ${isScrolled
-              ? 'bg-blue-600 text-white hover:bg-blue-700 shadow-blue-500/20'
-              : 'bg-white text-blue-600 hover:bg-blue-50 shadow-white/10'
+              ? 'bg-zinc-900 text-white hover:bg-black shadow-black/10'
+              : 'bg-white text-zinc-900 hover:bg-zinc-50 shadow-white/5'
               }`}
           >
             Jelajahi Sekarang

@@ -29,14 +29,14 @@ const Activities = () => {
     return (
         <section id="activities" className="py-24 bg-white relative overflow-hidden">
             {/* Decorative Blob */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-50" />
+            <div className="absolute top-0 right-0 w-96 h-96 bg-zinc-100 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 opacity-50" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center max-w-2xl mx-auto mb-16">
                     <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-4 block"
+                        className="text-zinc-900 font-bold tracking-widest uppercase text-sm mb-4 block"
                     >
                         Pengalaman Unik
                     </motion.span>

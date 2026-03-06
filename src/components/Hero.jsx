@@ -22,11 +22,11 @@ const Hero = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
-                        <span className="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 backdrop-blur-md text-blue-400 text-sm font-bold tracking-widest uppercase mb-6 border border-blue-500/30">
+                        <span className="inline-block px-4 py-1.5 rounded-full bg-zinc-900/10 backdrop-blur-md text-zinc-800 text-sm font-bold tracking-widest uppercase mb-6 border border-zinc-900/10">
                             Temukan Keajaiban Jember
                         </span>
                         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 drop-shadow-2xl tracking-tighter">
-                            Jelajahi <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Pesona Jember</span> di Jawa Timur.
+                            Jelajahi <span className="text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">Pesona Jember</span> di Jawa Timur.
                         </h1>
                         <p className="text-lg md:text-xl text-gray-200/90 mb-10 leading-relaxed max-w-2xl font-light">
                             Nikmati pengalaman tak terlupakan di destinasi wisata terbaik dengan pelayanan premium dan pemandangan yang memukau. Dari puncak gunung hingga kedalaman laut.
@@ -59,7 +59,7 @@ const Hero = () => {
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-2 text-white/50"
             >
                 <span className="text-[10px] uppercase tracking-widest font-bold">Scroll untuk detail</span>
-                <div className="w-[1px] h-12 bg-gradient-to-b from-blue-500 to-transparent" />
+                <div className="w-[1px] h-12 bg-gradient-to-b from-zinc-500 to-transparent" />
             </motion.div>
         </section>
     );
